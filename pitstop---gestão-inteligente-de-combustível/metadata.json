@@ -1,0 +1,6 @@
+{
+  "name": "PitStop - Gestão Inteligente de Combustível",
+  "description": "Monitoramento inteligente de consumo de combustível, cálculo tanque a tanque, histórico em formato de rodovia, calculadora flex e manutenção preventiva.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

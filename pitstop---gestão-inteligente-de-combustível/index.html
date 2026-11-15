@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="pt-BR" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>PitStop - Gestão Inteligente de Combustível</title>
+    <meta name="description" content="Monitoramento inteligente de consumo de combustível, cálculo tanque a tanque, histórico em formato de rodovia, calculadora flex e manutenção preventiva." />
+    
+    <!-- PWA & Mobile Meta Tags -->
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="PitStop" />
+    <link rel="apple-touch-icon" href="/icon-192x192.png" />
+    <link rel="icon" type="image/png" href="/icon-192x192.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/icon-192x192.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="/icon-512x512.png" />
+    <link rel="shortcut icon" type="image/png" href="/icon-192x192.png" />
+
+    <meta property="og:title" content="PitStop - Gestão Inteligente de Combustível" />
+    <meta property="og:description" content="Monitoramento inteligente de consumo de combustível, cálculo tanque a tanque, histórico em formato de rodovia, calculadora flex e manutenção preventiva." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+      try {
+        const t = localStorage.getItem('pitstop_theme_v1');
+        if (t === 'light') {
+          document.documentElement.classList.remove('dark');
+        } else {
+          document.documentElement.classList.add('dark');
+        }
+      } catch (e) {}
+    </script>
+  </head>
+  <body class="bg-slate-100 dark:bg-neutral-950 text-slate-900 dark:text-neutral-100 antialiased selection:bg-amber-500 selection:text-neutral-950 min-h-screen transition-colors">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
